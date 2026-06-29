@@ -36,7 +36,7 @@ Run it from a local terminal:
 
 ```bash
 ssh -t deploy@64.225.49.97 \
-  'cd /var/www/JzarrTechwebsite && bash scripts/deploy-production.sh'
+  'cd /var/www/JzarrTechwebsite && git pull --ff-only origin main && bash scripts/deploy-production.sh'
 ```
 
 The production `jzarrtechserver/.env` remains on the server and is ignored by
